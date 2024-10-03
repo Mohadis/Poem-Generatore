@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>AI Poem Generatore</title>
   </head>
   <body>
@@ -10,6 +11,22 @@
       <header>
         <h1>AI English Poem Generator</h1>
       </header>
+      <main>
+        <form id="poem-generator-form">
+          <input
+            type="text"
+            placeholder="Enter the topic of the French poem"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="poem" id="poem">
+          I was a young girl when I traveled here.
+        </div>
+      </main>
       <footer>
         This AI project was coded by
         <a href="https://github.com/Mohadis" target="_blank"
