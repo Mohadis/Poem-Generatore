@@ -4,28 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
-    <title>AI Poem Generatore</title>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <title>AI poem generator</title>
   </head>
   <body>
     <div class="container">
-      <header>
-        <h1>AI English Poem Generator</h1>
-      </header>
+      <h1>Poem Generator</h1>
       <main>
         <form id="poem-generator-form">
           <input
             type="text"
-            placeholder="Enter the topic of the French poem"
+            placeholder="Enter the topic of the poem"
             autofocus
-            required
             autocomplete="off"
-            class="instructions"
+            required
+            class="searchBox"
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="poem" id="poem">
-          I was a young girl when I traveled here.
-        </div>
+        <div class="poem" id="poem"></div>
       </main>
       <footer>
         This AI project was coded by
@@ -45,5 +42,6 @@
         >
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
